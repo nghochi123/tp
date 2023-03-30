@@ -99,7 +99,7 @@ public class Parser {
         String category = "";
         String price = "";
         String[] argumentsArray = new String[3];
-        Pattern descriptionPattern = Pattern.compile("(\\w+(\\s+\\w+)*)");
+        Pattern descriptionPattern = Pattern.compile("(.+?(?= -\\w))");
         Pattern categoryPattern = Pattern.compile("(-c|-category)\\s+(\\w+(\\s+\\w+)*)");
         Pattern pricePattern = Pattern.compile("(-p|-price)\\s+(\\S+)");
 
